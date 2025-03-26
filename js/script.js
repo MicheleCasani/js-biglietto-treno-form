@@ -1,4 +1,4 @@
-document.getElementById('btn-genera').addEventListener('click', function() {
+document.getElementById('btn-genera').addEventListener('click', function () {
     // Prendo i valori dal form
     let name = document.getElementById('name-field').value;
     let km = parseFloat(document.getElementById('km-field').value);
@@ -20,4 +20,10 @@ document.getElementById('btn-genera').addEventListener('click', function() {
 
     // Stampa il prezzo finale in console
     console.log(finalPrice);
+});
+
+document.getElementById('btn-annulla').addEventListener('click', function () {
+    document.getElementById('name-field').value = '';
+    document.getElementById('km-field').value = '';
+    document.getElementById('age-field').value = '';
 });
