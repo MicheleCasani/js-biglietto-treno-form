@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Biglietto del Treno</title>
 </head>
+
 <body>
-    <input type="text" placeholder="inserisci il tuo nome">
-    <input type="text" placeholder="inserisci i Km da percorrere">
-    <select name="" id="age-title">
-        <option value="18">Under 18</option>
-        <option value="65">Over 65</option>
-        <option value="standard">Età compresa tra i 18 e i 65</option>
+    <input type="text" placeholder="inserisci il tuo nome" id="name-field">
+    <input type="text" placeholder="inserisci i Km da percorrere" id="km-field">
+    <select name="" id="age-field">
+        <option value="under-18">minorenne</option>
+        <option value="over-65">Over 65</option>
+        <option value="standard">Maggiorenne</option>
     </select>
+    <button id="btn-genera">Genera</button>
+    <button id="btn-annulla">Annulla</button>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
