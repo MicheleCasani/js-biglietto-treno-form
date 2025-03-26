@@ -25,13 +25,13 @@ document.getElementById('btn-genera').addEventListener('click', function () {
     //aggiungo i dati alla lista del ticket
     document.getElementById('name-ticket').innerText = ' ' + name;
     if (age === 'under-18') {
-        document.getElementById('offer-ticket').innerText = ' sconto minorenni';
+        document.getElementById('offer-ticket').innerText = ' SCONTO MINORENNI';
     }
     else if (age === 'over-65') {
-        document.getElementById('offer-ticket').innerText = ' sconto over 65';
+        document.getElementById('offer-ticket').innerText = ' SCONTO OVER 65';
     }
     else {
-        document.getElementById('offer-ticket').innerText = ' prezzo standard';
+        document.getElementById('offer-ticket').innerText = ' PREZZO STANDARD';
     }
     document.getElementById('price-ticket').innerText = ' ' + finalPrice + ' €';
     document.getElementById('carrage-ticket').innerText = ' 5';
