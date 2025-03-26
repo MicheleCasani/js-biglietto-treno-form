@@ -1,3 +1,4 @@
+//metto tutto all'interno di un evento click in modo che viene letto dalla console solo se premutoil bottone
 document.getElementById('btn-genera').addEventListener('click', function () {
     // Prendo i valori dal form
     let name = document.getElementById('name-field').value;
@@ -20,8 +21,23 @@ document.getElementById('btn-genera').addEventListener('click', function () {
 
     // Stampa il prezzo finale in console
     console.log(finalPrice);
+
+    //aggiungo i dati alla lista del ticket
+    document.getElementById('name-ticket').innerText = name;
+    if (age === 'under-18') {
+        document.getElementById('offer-ticket').innerText = 'sconto minorenni';
+    }
+    else if (age === 'over-65') {
+        document.getElementById('offer-ticket').innerText = 'sconto over 65';
+    }
+    else {
+        document.getElementById('offer-ticket').innerText = 'prezzo standard';
+    }
+    document.getElementById('price-ticket').innerText = finalPrice + ' €';
+
 });
 
+//permetto al tasto annulla di resettare i campi inserendo un evento click che resetta i campi
 document.getElementById('btn-annulla').addEventListener('click', function () {
     document.getElementById('name-field').value = '';
     document.getElementById('km-field').value = '';
