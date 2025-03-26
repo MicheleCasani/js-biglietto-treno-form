@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(143, 18, 66);
+}
+
+button{
+    border: solid 1px rgb(143, 18, 66);
+    justify-content: center;
+}
+
+.class-border{
+    border-radius: 10px;
+}
