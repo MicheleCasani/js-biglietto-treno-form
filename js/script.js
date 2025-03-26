@@ -23,23 +23,25 @@ document.getElementById('btn-genera').addEventListener('click', function () {
     console.log(finalPrice);
 
     //aggiungo i dati alla lista del ticket
-    document.getElementById('name-ticket').innerText = name;
+    document.getElementById('name-ticket').innerText = ' ' + name;
     if (age === 'under-18') {
-        document.getElementById('offer-ticket').innerText = 'sconto minorenni';
+        document.getElementById('offer-ticket').innerText = ' sconto minorenni';
     }
     else if (age === 'over-65') {
-        document.getElementById('offer-ticket').innerText = 'sconto over 65';
+        document.getElementById('offer-ticket').innerText = ' sconto over 65';
     }
     else {
-        document.getElementById('offer-ticket').innerText = 'prezzo standard';
+        document.getElementById('offer-ticket').innerText = ' prezzo standard';
     }
-    document.getElementById('price-ticket').innerText = finalPrice + ' €';
+    document.getElementById('price-ticket').innerText = ' ' + finalPrice + ' €';
+    document.getElementById('carrage-ticket').innerText = ' 5';
+    document.getElementById('code-ticket').innerText = ' 92911';
 
 });
 
 //permetto al tasto annulla di resettare i campi inserendo un evento click che resetta i campi
 document.getElementById('btn-annulla').addEventListener('click', function () {
-    document.getElementById('name-field').value = '';
-    document.getElementById('km-field').value = '';
-    document.getElementById('age-field').value = '';
+    document.getElementById('name-field').value = ' ';
+    document.getElementById('km-field').value = ' ';
+    document.getElementById('age-field').value = ' ';
 });

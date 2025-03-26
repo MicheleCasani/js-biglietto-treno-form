@@ -14,19 +14,20 @@
     <header class="text-center  text-white py-3">
         <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
     </header>
+
     <main>
         <div class="container mt-4 bg-light class-border p-3">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 text-center">
                     <label for="name-field">Nome e Cognome</label>
                     <input type="text" placeholder="inserisci il tuo nome" id="name-field">
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 text-center">
                     <label for="km-field">Km da percorrere</label>
                     <input type="text" placeholder="inserisci i Km da percorrere" id="km-field">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 text-center">
                     <label for="age-field">Facia d'età</label>
                     <select name="" id="age-field">
                         <option value="under-18">minorenne</option>
@@ -35,29 +36,34 @@
                     </select>
                 </div>
             </div>
-
-
-            <button id="btn-genera" class="btn btn-light">Genera</button>
-            <button id="btn-annulla" class="btn btn-light">Annulla</button>
+            <div class="row">
+                <div class="col-md text-center pt-5
+                pb-2">
+                    <button id="btn-genera" class="class-border-btn">Genera</button>
+                    <button id="btn-annulla" class="class-border-btn">Annulla</button>
+                </div>
+            </div>
         </div>
 
         <h2 class="text-center  text-white py-3"> IL TUO BIGLIETTO</h2>
         <div class="container bg-light p-3 mt-4 class-border">
-        <ul class="list-unstyled">
-            <li><strong>Nome Passeggero:</strong><span id="name-ticket"></span></li>
-            <li><strong>Offerta:</strong><span id="offer-ticket"></span></li>
-            <li><strong>Carrozza:</strong>
-                <span>5</span>
-            </li>
-            <li><strong>Codice CP:</strong>
-                <span>92911</span>
-            </li>
-            <li><strong>Costo Biglietto</strong>:<span id="price-ticket"></span></li>
-
-        </ul>
-
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Nome Passeggero:</strong><span id="name-ticket"></span></li>
+                                <li class="list-group-item"><strong>Offerta:</strong><span id="offer-ticket"></span></li>
+                                <li class="list-group-item"><strong>Carrozza:</strong><span id="carrage-ticket"></span></li>
+                                <li class="list-group-item"><strong>Codice CP:</strong><span id="code-ticket"></span></li>
+                                </li>
+                                <li class="list-group-item"><strong>Costo Biglietto</strong>:<span id="price-ticket"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
 
     <script src="./js/script.js"></script>
